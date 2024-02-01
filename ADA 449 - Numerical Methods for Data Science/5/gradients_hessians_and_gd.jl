@@ -15,10 +15,8 @@ println(G)
 #∇f (x⋆) = 0 && F(x⋆) > 0
 #then x⋆ is a local minimizer of f .
 
-
 #   Gradient Descent  #
 # α is the learning rate.
-
 
 function optimize(f::Function, x_init::AbstractVector; lr::AbstractFloat = 0.001, max_iter::Integer = 100, stopping_criterion::Float64 = 1e-2)
     for i in 1:max_iter
